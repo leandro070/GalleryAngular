@@ -1,0 +1,15 @@
+<h2>Top Images</h2>
+
+<div class="container-top-list">
+  <div class="card" style="width: 18rem;" *ngFor="let image of images">
+    <img class="card-img-top" src="{{image.webformatURL}}" (click)="openImage(image)">
+    <div class="card-body">
+      <p class="sub">User:</p>
+      <h6 class="card-title">{{image.user}}</h6>
+    </div>
+  </div>
+
+</div>
+
+
+
